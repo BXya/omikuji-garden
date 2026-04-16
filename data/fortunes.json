@@ -1,4 +1,5 @@
 {
+  "version": 1,
   "fortunes": [
     { "id": 1,  "level": "大吉", "levelRomaji": "daikichi",  "text_ja": "竹に風、心に道。迷はず歩むべし。", "text_zh": "竹中有风，心中有道。不必迟疑，直行即可。" },
     { "id": 2,  "level": "大吉", "levelRomaji": "daikichi",  "text_ja": "朝日昇る丘、高き志の成就の兆し。", "text_zh": "朝阳升于高丘，壮志将成之兆。" },

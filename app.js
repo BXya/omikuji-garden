@@ -1,4 +1,6 @@
 // omikuji-garden entry module.
+// NOTE: `<script type="module">` is deferred, so DOM is already parsed
+// by the time init() runs. Later slices can assume document.body exists.
 
 const DATA_PATHS = {
   fortunes: "data/fortunes.json",
@@ -21,9 +23,11 @@ async function loadData() {
 async function init() {
   try {
     const { fortunes, articles } = await loadData();
+    document.body.dataset.omikujiState = "ready";
     console.log(`[omikuji-garden] loaded ${fortunes.length} fortunes, ${articles.length} articles`);
     window.__omikuji = { fortunes, articles }; // dev inspection handle
   } catch (err) {
+    document.body.dataset.omikujiState = "error";
     console.error("[omikuji-garden] data load failed:", err);
   }
 }
