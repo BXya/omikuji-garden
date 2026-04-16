@@ -1,0 +1,18 @@
+{
+  "fortunes": [
+    { "id": 1,  "level": "大吉", "levelRomaji": "daikichi",  "text_ja": "竹に風、心に道。迷はず歩むべし。", "text_zh": "竹中有风，心中有道。不必迟疑，直行即可。" },
+    { "id": 2,  "level": "大吉", "levelRomaji": "daikichi",  "text_ja": "朝日昇る丘、高き志の成就の兆し。", "text_zh": "朝阳升于高丘，壮志将成之兆。" },
+    { "id": 3,  "level": "吉",   "levelRomaji": "kichi",     "text_ja": "静かに努むれば、実を結ぶ時節来る。", "text_zh": "安静耕耘，自有结果的时节。" },
+    { "id": 4,  "level": "吉",   "levelRomaji": "kichi",     "text_ja": "石に苔、年月は味方なり。",         "text_zh": "石上生苔，岁月与你同在。" },
+    { "id": 5,  "level": "中吉", "levelRomaji": "chukichi",  "text_ja": "半月は欠けつつも光を失はず。",     "text_zh": "月虽半缺，光华不失。" },
+    { "id": 6,  "level": "中吉", "levelRomaji": "chukichi",  "text_ja": "急がず、されど止まらず。",         "text_zh": "不急不躁，亦不止步。" },
+    { "id": 7,  "level": "小吉", "levelRomaji": "shokichi",  "text_ja": "小さな声も、届くべきところには届く。", "text_zh": "微小的声响，终会抵达该抵达之处。" },
+    { "id": 8,  "level": "小吉", "levelRomaji": "shokichi",  "text_ja": "花一輪、季節を教ふ。",             "text_zh": "一朵小花，已足以述说季节。" },
+    { "id": 9,  "level": "末吉", "levelRomaji": "suekichi",  "text_ja": "今はまだ芽、やがて幹となる。",     "text_zh": "此刻尚是新芽，终将成为树干。" },
+    { "id": 10, "level": "末吉", "levelRomaji": "suekichi",  "text_ja": "冬の後に必ず春あり。",             "text_zh": "冬后必有春。" },
+    { "id": 11, "level": "凶",   "levelRomaji": "kyo",       "text_ja": "道に迷ふ時、原点に帰るべし。",     "text_zh": "迷途之时，当归原点。" },
+    { "id": 12, "level": "凶",   "levelRomaji": "kyo",       "text_ja": "強き風には頭を低くせよ。",         "text_zh": "狂风来时，俯首以避。" },
+    { "id": 13, "level": "大凶", "levelRomaji": "daikyo",    "text_ja": "崩るる家、礎より建て直せ。",       "text_zh": "房屋既崩，从地基重建。" },
+    { "id": 14, "level": "大凶", "levelRomaji": "daikyo",    "text_ja": "全てを失ひし時、真の創造始まる。", "text_zh": "一切失尽之时，真正的创造方始。" }
+  ]
+}
