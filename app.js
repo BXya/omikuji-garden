@@ -142,9 +142,13 @@ function returnToSignbox() {
 }
 
 function openArticle(article) {
-  document.getElementById("overlay-title").textContent = article.title ?? "";
-  document.getElementById("overlay-title-en").textContent = article.titleEn ?? "";
-  document.getElementById("overlay-body").innerHTML = renderMarkdown(article.body ?? "");
+  const titleEl = document.getElementById("overlay-title");
+  const titleEnEl = document.getElementById("overlay-title-en");
+  const bodyEl = document.getElementById("overlay-body");
+  // Fallback if an article somehow has no title — keeps the dialog labelable.
+  titleEl.textContent = article.title || "無題 · Untitled";
+  titleEnEl.textContent = article.titleEn || "";
+  bodyEl.innerHTML = renderMarkdown(article.body || "");
   const overlay = document.getElementById("overlay");
   overlay.hidden = false;
   overlay.scrollTop = 0;
@@ -154,6 +158,10 @@ function openArticle(article) {
 
 function closeArticle() {
   document.getElementById("overlay").hidden = true;
+  // Return focus to the Flip button (logical back-target). It's still in
+  // the DOM while the stick stage is visible.
+  const flip = document.getElementById("btn-flip");
+  if (flip && !flip.closest("[hidden]")) flip.focus();
 }
 
 function wireEvents() {
@@ -172,6 +180,15 @@ function wireEvents() {
     closeArticle();
     returnToSignbox();
     draw();
+  });
+
+  // TODO(slice-7): trap focus inside overlay via `inert` on sibling elements.
+  // Esc closes the article overlay — standard dialog expectation.
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      const overlay = document.getElementById("overlay");
+      if (overlay && !overlay.hidden) closeArticle();
+    }
   });
 }
 
