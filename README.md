@@ -4,7 +4,7 @@ A Japanese-aesthetic digital garden framed as an 御神籤 (omikuji) shrine. Dra
 
 ## Relationship to `architecture-garden`
 
-Separate project. Inherits 9 articles from the midterm `architecture-garden` (see `data/articles.json`, `origin: "midterm-migrated"`) + 1 new manifesto article.
+Separate project. Once Slice 6 lands, this site will inherit 9 articles from the midterm `architecture-garden` (tagged `origin: "midterm-migrated"` in `data/articles.json`) plus 1 new manifesto article.
 
 ## Design & plan
 
@@ -21,3 +21,7 @@ python -m http.server 8000
 ## Deploy
 
 GitHub Pages via `.github/workflows/deploy.yml`. See `PLAN.md §9`.
+
+## Runtime dependencies
+
+No npm packages, no build step. The page loads four font families from Google Fonts at runtime (Shippori Mincho, Noto Serif JP, Noto Serif SC, EB Garamond). If offline, the page falls back to system serifs (Hiragino Mincho / Yu Mincho / Songti / Georgia) per the CSS stack.

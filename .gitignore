@@ -3,3 +3,9 @@ Thumbs.db
 .claude/
 .vscode/
 node_modules/
+__pycache__/
+*.pyc
+*.log
+.idea/
+dist/
+build/
