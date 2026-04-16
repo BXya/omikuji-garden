@@ -15,9 +15,42 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main id="app">
-    <h1 class="placeholder">御神籤の庭</h1>
-    <p class="placeholder subtitle">omikuji-garden · under construction</p>
+  <main id="app" data-stage="signbox">
+    <div class="scene" aria-label="omikuji shrine scene">
+      <div class="bamboo-bg" aria-hidden="true">
+        <svg class="bamboo-stalk bamboo-stalk--1" viewBox="0 0 80 600" preserveAspectRatio="none">
+          <rect x="30" y="0" width="20" height="600" fill="var(--moss)" opacity="0.18" />
+          <line x1="40" y1="120" x2="40" y2="120" stroke="var(--moss)" stroke-width="22" stroke-linecap="round" opacity="0.22" />
+          <line x1="40" y1="260" x2="40" y2="260" stroke="var(--moss)" stroke-width="22" stroke-linecap="round" opacity="0.22" />
+          <line x1="40" y1="420" x2="40" y2="420" stroke="var(--moss)" stroke-width="22" stroke-linecap="round" opacity="0.22" />
+        </svg>
+        <svg class="bamboo-stalk bamboo-stalk--2" viewBox="0 0 80 600" preserveAspectRatio="none">
+          <rect x="30" y="0" width="20" height="600" fill="var(--moss)" opacity="0.12" />
+          <line x1="40" y1="180" x2="40" y2="180" stroke="var(--moss)" stroke-width="22" stroke-linecap="round" opacity="0.16" />
+          <line x1="40" y1="360" x2="40" y2="360" stroke="var(--moss)" stroke-width="22" stroke-linecap="round" opacity="0.16" />
+        </svg>
+        <svg class="bamboo-stalk bamboo-stalk--3" viewBox="0 0 80 600" preserveAspectRatio="none">
+          <rect x="30" y="0" width="20" height="600" fill="var(--moss)" opacity="0.10" />
+          <line x1="40" y1="220" x2="40" y2="220" stroke="var(--moss)" stroke-width="22" stroke-linecap="round" opacity="0.14" />
+        </svg>
+      </div>
+
+      <button type="button" class="signbox" id="signbox" aria-label="签筒 — tap to draw a fortune stick">
+        <svg viewBox="0 0 200 300" class="signbox-svg" aria-hidden="true">
+          <!-- cylinder body -->
+          <ellipse cx="100" cy="40"  rx="70" ry="18" fill="var(--moss)" opacity="0.9" />
+          <rect    x="30"  y="40"    width="140" height="240" fill="var(--moss)" opacity="0.85" />
+          <ellipse cx="100" cy="280" rx="70" ry="18" fill="#2e3a22" opacity="1" />
+          <!-- bamboo nodes on cylinder -->
+          <line x1="30" y1="100" x2="170" y2="100" stroke="#2e3a22" stroke-width="3" opacity="0.6" />
+          <line x1="30" y1="180" x2="170" y2="180" stroke="#2e3a22" stroke-width="3" opacity="0.6" />
+          <!-- peeking stick (idle hint) -->
+          <rect class="peek-stick" x="92" y="-20" width="16" height="80" fill="#e8d9a8" stroke="#a8896a" stroke-width="1.2" rx="2" />
+        </svg>
+      </button>
+
+      <p class="signbox-label">在此抽一签 · Tap the signbox to draw</p>
+    </div>
   </main>
   <script type="module" src="app.js"></script>
 </body>
