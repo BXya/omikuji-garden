@@ -4,7 +4,7 @@ A Japanese-aesthetic digital garden framed as an 御神籤 (omikuji) shrine. Dra
 
 ## Relationship to `architecture-garden`
 
-Separate project. Once Slice 6 lands, this site will inherit 9 articles from the midterm `architecture-garden` (tagged `origin: "midterm-migrated"` in `data/articles.json`) plus 1 new manifesto article.
+Separate project. This site inherits 9 articles from the midterm `architecture-garden` (tagged `origin: "midterm-migrated"` in `data/articles.json`) plus 1 new manifesto article.
 
 ## Design & plan
 
@@ -19,6 +19,8 @@ python -m http.server 8000
 ```
 
 ## Deploy to GitHub Pages
+
+Prerequisite: [`gh` CLI](https://cli.github.com) installed and authenticated (`gh auth login`).
 
 One-time setup:
 
