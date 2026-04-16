@@ -135,3 +135,145 @@ body {
   .bamboo-stalk, .peek-stick { animation: none; }
   .signbox { transition: none; }
 }
+
+/* ===== Drawn-stick stage ===== */
+
+.stick-stage {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.stick {
+  position: relative;
+  width: clamp(80px, 14vw, 120px);
+  height: clamp(380px, 56vh, 520px);
+  perspective: 1200px;
+  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.stick-face {
+  position: absolute;
+  inset: 0;
+  background: #e8d9a8;
+  border: 1px solid #a8896a;
+  border-radius: 6px;
+  box-shadow: 0 10px 24px rgba(26, 26, 26, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem 0.4rem;
+  backface-visibility: hidden;
+}
+
+.stick-face--front {
+  gap: 0.9rem;
+}
+
+.stick-face--back {
+  transform: rotateY(180deg);
+  background: #dcc992;
+}
+
+.fortune-seal {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--vermilion);
+  color: #faf3e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif-ja);
+  font-weight: 900;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.35);
+  transform: rotate(-4deg);
+}
+
+.fortune-text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: var(--font-serif-ja);
+  font-size: 1rem;
+  line-height: 1.8;
+  letter-spacing: 0.14em;
+  color: var(--ink);
+  max-height: 60%;
+  text-align: start;
+}
+
+.fortune-gloss {
+  font-family: var(--font-serif-zh);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--sumi-light);
+  writing-mode: horizontal-tb;
+  padding: 0 0.5rem;
+  margin-top: auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+.stick-number {
+  font-family: var(--font-serif-ja);
+  font-size: 0.7rem;
+  color: var(--sumi-light);
+  letter-spacing: 0.1em;
+}
+
+/* Stick entrance animation: slides from below viewport */
+.stick-stage[data-anim="entering"] .stick {
+  animation: stick-slide-up 1.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes stick-slide-up {
+  0%   { opacity: 0; transform: translateY(60vh) rotate(-14deg); }
+  60%  { opacity: 1; transform: translateY(-8px) rotate(3deg); }
+  100% { opacity: 1; transform: translateY(0)    rotate(0deg); }
+}
+
+.stick-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  font-family: var(--font-serif-ja);
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  padding: 0.75rem 1.4rem;
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid var(--ink);
+  transition: background 160ms ease, color 160ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn--primary {
+  background: var(--ink);
+  color: var(--paper);
+}
+.btn--primary:active { background: #3a3a3a; }
+
+.btn--ghost {
+  background: transparent;
+  color: var(--ink);
+}
+.btn--ghost:active { background: rgba(26,26,26,0.06); }
+
+/* Stage transitions: hide signbox when stick is drawn */
+#app[data-stage="stick"] .signbox,
+#app[data-stage="stick"] .signbox-label {
+  display: none;
+}
+#app[data-stage="signbox"] .stick-stage {
+  display: none;
+}

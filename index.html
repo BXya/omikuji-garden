@@ -50,6 +50,26 @@
       </button>
 
       <p class="signbox-label" id="signbox-label"><span lang="zh">在此抽一签</span> · <span lang="en">Tap the signbox to draw</span></p>
+
+    <!-- Drawn-stick stage (hidden until draw) -->
+    <section class="stick-stage" id="stick-stage" hidden>
+      <div class="stick" id="stick" data-face="front">
+        <!-- Front face: fortune -->
+        <div class="stick-face stick-face--front">
+          <div class="fortune-seal" id="fortune-seal" aria-label="運勢">大吉</div>
+          <div class="fortune-text" id="fortune-text-ja" lang="ja"></div>
+          <div class="fortune-gloss" id="fortune-text-zh" lang="zh-CN"></div>
+          <div class="stick-number" id="stick-number">第〇番</div>
+        </div>
+        <!-- Back face populated in Slice 5 -->
+        <div class="stick-face stick-face--back" aria-hidden="true"></div>
+      </div>
+
+      <div class="stick-actions">
+        <button type="button" class="btn btn--primary" id="btn-flip">翻开签背 · Flip</button>
+        <button type="button" class="btn btn--ghost"   id="btn-redraw">回签筒 · Return</button>
+      </div>
+    </section>
     </div>
   </main>
   <script type="module" src="app.js"></script>
