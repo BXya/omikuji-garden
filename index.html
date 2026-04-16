@@ -35,8 +35,8 @@
         </svg>
       </div>
 
-      <button type="button" class="signbox" id="signbox" aria-label="签筒 — tap to draw a fortune stick">
-        <svg viewBox="0 0 200 300" class="signbox-svg" aria-hidden="true">
+      <button type="button" class="signbox" id="signbox" aria-labelledby="signbox-label">
+        <svg viewBox="0 -40 200 340" class="signbox-svg" aria-hidden="true">
           <!-- cylinder body -->
           <ellipse cx="100" cy="40"  rx="70" ry="18" fill="var(--moss)" opacity="0.9" />
           <rect    x="30"  y="40"    width="140" height="240" fill="var(--moss)" opacity="0.85" />
@@ -49,7 +49,7 @@
         </svg>
       </button>
 
-      <p class="signbox-label">在此抽一签 · Tap the signbox to draw</p>
+      <p class="signbox-label" id="signbox-label"><span lang="zh">在此抽一签</span> · <span lang="en">Tap the signbox to draw</span></p>
     </div>
   </main>
   <script type="module" src="app.js"></script>
