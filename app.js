@@ -8,6 +8,52 @@ const DATA_PATHS = {
   articles: "data/articles.json",
 };
 
+/**
+ * Minimal markdown renderer — intentionally limited per PLAN §5.
+ * Supports: ##, ###, paragraphs, **bold**, *italic*, > blockquote, ---, blank-line breaks.
+ * Escapes HTML first to prevent injection.
+ */
+function renderMarkdown(src) {
+  const escape = (s) => s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+
+  const inline = (s) => s
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/\*([^*]+)\*/g, "<em>$1</em>");
+
+  const lines = escape(src).split(/\r?\n/);
+  const out = [];
+  let para = [];
+  let quote = [];
+
+  const flushPara = () => {
+    if (para.length) { out.push(`<p>${inline(para.join(" ").trim())}</p>`); para = []; }
+  };
+  const flushQuote = () => {
+    if (quote.length) {
+      out.push(`<blockquote>${quote.map(l => inline(l)).join("<br/>")}</blockquote>`);
+      quote = [];
+    }
+  };
+
+  for (const raw of lines) {
+    const line = raw.trimEnd();
+    if (!line.trim()) { flushPara(); flushQuote(); continue; }
+    if (line.startsWith("### ")) { flushPara(); flushQuote(); out.push(`<h3>${inline(line.slice(4))}</h3>`); continue; }
+    if (line.startsWith("## "))  { flushPara(); flushQuote(); out.push(`<h2>${inline(line.slice(3))}</h2>`); continue; }
+    if (line.startsWith("# "))   { flushPara(); flushQuote(); continue; } // H1 owned by title, skip in body
+    if (line === "---")          { flushPara(); flushQuote(); out.push("<hr/>"); continue; }
+    if (line.startsWith("&gt; ")) { flushPara(); quote.push(line.slice(5)); continue; }
+    flushQuote();
+    para.push(line);
+  }
+  flushPara();
+  flushQuote();
+  return out.join("\n");
+}
+
 const state = {
   fortunes: [],
   articles: [],
@@ -95,13 +141,38 @@ function returnToSignbox() {
   document.getElementById("signbox").focus();
 }
 
+function openArticle(article) {
+  document.getElementById("overlay-title").textContent = article.title ?? "";
+  document.getElementById("overlay-title-en").textContent = article.titleEn ?? "";
+  document.getElementById("overlay-body").innerHTML = renderMarkdown(article.body ?? "");
+  const overlay = document.getElementById("overlay");
+  overlay.hidden = false;
+  overlay.scrollTop = 0;
+  // Move focus into the overlay for keyboard navigation
+  document.getElementById("btn-redraw-from-article").focus();
+}
+
+function closeArticle() {
+  document.getElementById("overlay").hidden = true;
+}
+
 function wireEvents() {
   document.getElementById("signbox").addEventListener("click", draw);
   document.getElementById("btn-redraw").addEventListener("click", () => {
     returnToSignbox();
     draw();
   });
-  // btn-flip wired in Slice 5
+  document.getElementById("btn-flip").addEventListener("click", () => {
+    if (state.currentArticle) openArticle(state.currentArticle);
+  });
+  document.getElementById("btn-close-article").addEventListener("click", () => {
+    closeArticle();
+  });
+  document.getElementById("btn-redraw-from-article").addEventListener("click", () => {
+    closeArticle();
+    returnToSignbox();
+    draw();
+  });
 }
 
 async function init() {

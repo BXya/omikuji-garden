@@ -71,6 +71,21 @@
       </div>
     </section>
     </div>
+
+    <!-- Article overlay (hidden by default) -->
+    <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay-title" hidden>
+      <article class="article">
+        <header class="article-header">
+          <h1 class="article-title" id="overlay-title" lang="zh-CN"></h1>
+          <p class="article-title-en" id="overlay-title-en" lang="en"></p>
+        </header>
+        <div class="article-body" id="overlay-body"></div>
+        <footer class="article-actions">
+          <button type="button" class="btn btn--primary" id="btn-redraw-from-article">再抽一签 · Draw again</button>
+          <button type="button" class="btn btn--ghost"   id="btn-close-article">回签筒 · Return</button>
+        </footer>
+      </article>
+    </div>
   </main>
   <script type="module" src="app.js"></script>
 </body>
