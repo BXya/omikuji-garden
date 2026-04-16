@@ -411,7 +411,7 @@ body {
   }
 
   .bamboo-stalk--1 { left: 2%;  width: 50px; }
-  .bamboo-stalk--2 { left: 84%; width: 50px; }
+  .bamboo-stalk--2 { left: auto; right: 2%; width: 50px; }
   .bamboo-stalk--3 { display: none; }
 
   .stick {
@@ -426,11 +426,22 @@ body {
   .fortune-gloss { font-size: 0.66rem; }
 
   .overlay {
-    padding: 1.5rem 1rem calc(1.5rem + env(safe-area-inset-bottom)) 1rem;
+    padding:
+      calc(1.5rem + env(safe-area-inset-top))
+      1rem
+      calc(1.5rem + env(safe-area-inset-bottom))
+      1rem;
   }
 
   .article-body { font-size: 0.98rem; line-height: 1.8; }
-  .article-title { max-height: 220px; font-size: 1.6rem; }
+  .article-title {
+    writing-mode: horizontal-tb;
+    max-height: none;
+    font-size: 1.6rem;
+    letter-spacing: 0.08em;
+    display: block;
+    text-align: center;
+  }
 
   .stick-actions, .article-actions { flex-direction: column; width: 100%; }
   .btn { width: 100%; }
