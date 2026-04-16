@@ -152,12 +152,16 @@ function openArticle(article) {
   const overlay = document.getElementById("overlay");
   overlay.hidden = false;
   overlay.scrollTop = 0;
+  // Lock the underlying scene so Tab stays inside the dialog.
+  document.querySelector(".scene").inert = true;
   // Move focus into the overlay for keyboard navigation
   document.getElementById("btn-redraw-from-article").focus();
 }
 
 function closeArticle() {
   document.getElementById("overlay").hidden = true;
+  // Restore focusability of the scene.
+  document.querySelector(".scene").inert = false;
   // Return focus to the Flip button (logical back-target). It's still in
   // the DOM while the stick stage is visible.
   const flip = document.getElementById("btn-flip");
@@ -182,7 +186,6 @@ function wireEvents() {
     draw();
   });
 
-  // TODO(slice-7): trap focus inside overlay via `inert` on sibling elements.
   // Esc closes the article overlay — standard dialog expectation.
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {

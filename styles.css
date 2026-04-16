@@ -130,10 +130,21 @@ body {
   margin: 0;
 }
 
-/* Accessibility: respect reduced-motion preference (partial — full rules added in slice 7) */
+/* Accessibility: respect reduced-motion preference (full rules — extended in slice 7) */
 @media (prefers-reduced-motion: reduce) {
-  .bamboo-stalk, .peek-stick { animation: none; }
-  .signbox { transition: none; }
+  .bamboo-stalk,
+  .peek-stick {
+    animation: none;
+  }
+  .signbox {
+    transition: none;
+  }
+  .stick-stage[data-anim="entering"] .stick {
+    animation: none;
+  }
+  .overlay {
+    animation: none;
+  }
 }
 
 /* ===== Drawn-stick stage ===== */
@@ -383,4 +394,44 @@ body {
   margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid rgba(26,26,26,0.08);
+}
+
+/* ===== Mobile (<= 640px) ===== */
+
+@media (max-width: 640px) {
+  .scene {
+    height: 100dvh;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .signbox {
+    width: 55vw;
+    max-width: 200px;
+  }
+
+  .bamboo-stalk--1 { left: 2%;  width: 50px; }
+  .bamboo-stalk--2 { left: 84%; width: 50px; }
+  .bamboo-stalk--3 { display: none; }
+
+  .stick {
+    width: 22vw;
+    max-width: 110px;
+    height: 65vh;
+    max-height: 480px;
+  }
+
+  .fortune-seal { width: 48px; height: 48px; font-size: 0.95rem; }
+  .fortune-text { font-size: 0.9rem; }
+  .fortune-gloss { font-size: 0.66rem; }
+
+  .overlay {
+    padding: 1.5rem 1rem calc(1.5rem + env(safe-area-inset-bottom)) 1rem;
+  }
+
+  .article-body { font-size: 0.98rem; line-height: 1.8; }
+  .article-title { max-height: 220px; font-size: 1.6rem; }
+
+  .stick-actions, .article-actions { flex-direction: column; width: 100%; }
+  .btn { width: 100%; }
 }
