@@ -33,13 +33,17 @@ function pickFortune(fortunes) {
   return fortunes[i];
 }
 
-/** Weighted random pick of one article. Article weights default to 1. */
+/** Weighted random pick of one article. Article weights default to 1.
+ *  Canonical formulation: accumulate weights, find first prefix that exceeds r.
+ *  Returns the last article as a safety fallback (unreachable with non-negative weights). */
 function pickArticle(articles) {
   const total = articles.reduce((s, a) => s + (a.weight ?? 1), 0);
-  let r = Math.random() * total;
+  if (total <= 0) return articles[Math.floor(Math.random() * articles.length)];
+  const r = Math.random() * total;
+  let acc = 0;
   for (const a of articles) {
-    r -= (a.weight ?? 1);
-    if (r <= 0) return a;
+    acc += (a.weight ?? 1);
+    if (r < acc) return a;
   }
   return articles[articles.length - 1];
 }
@@ -50,33 +54,45 @@ function setStage(stage) {
 
 function renderStickFront(fortune) {
   document.getElementById("fortune-seal").textContent = fortune.level;
+  document.getElementById("fortune-seal").setAttribute("aria-label", `運勢: ${fortune.level}`);
   document.getElementById("fortune-text-ja").textContent = fortune.text_ja;
   document.getElementById("fortune-text-zh").textContent = fortune.text_zh;
   document.getElementById("stick-number").textContent = `第 ${fortune.id} 番`;
 }
 
 function draw() {
+  if (!state.fortunes.length) return; // guard: data not yet loaded
   state.currentFortune = pickFortune(state.fortunes);
   state.currentArticle = pickArticle(state.articles);
   renderStickFront(state.currentFortune);
 
   const stage = document.getElementById("stick-stage");
   stage.hidden = false;
-  stage.dataset.anim = "entering";
   setStage("stick");
 
-  // Clear animation class after it plays so re-draws retrigger it.
+  // Force-restart the slide-up animation: clear the attr, flush layout, re-add.
+  delete stage.dataset.anim;
+  // eslint-disable-next-line no-unused-expressions
+  stage.offsetWidth; // reflow — reads layout to commit the attribute removal
+  stage.dataset.anim = "entering";
+
+  // Clean up the attribute after animation so next restart works identically.
   stage.addEventListener("animationend", () => {
     delete stage.dataset.anim;
   }, { once: true });
+
+  // Move keyboard focus to the next action for accessibility.
+  document.getElementById("btn-flip").focus();
 }
 
 function returnToSignbox() {
   const stage = document.getElementById("stick-stage");
   stage.hidden = true;
+  delete stage.dataset.anim;
   setStage("signbox");
   state.currentFortune = null;
   state.currentArticle = null;
+  document.getElementById("signbox").focus();
 }
 
 function wireEvents() {

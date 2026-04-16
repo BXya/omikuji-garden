@@ -277,3 +277,5 @@ body {
 #app[data-stage="signbox"] .stick-stage {
   display: none;
 }
+#app[data-stage="loading"] .signbox { pointer-events: none; opacity: 0.6; }
+#app[data-stage="loading"] .stick-stage { display: none; }
