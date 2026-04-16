@@ -1,0 +1,56 @@
+:root {
+  --ink:        #1a1a1a;
+  --paper:      #f5f1e8;
+  --vermilion:  #c1272d;
+  --moss:       #4a5a3a;
+  --sumi-light: #5c5c5c;
+
+  --font-serif-ja: "Shippori Mincho", "Noto Serif JP",
+                   "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --font-serif-zh: "Noto Serif SC", "Songti SC", "STSong", serif;
+  --font-serif-en: "EB Garamond", Georgia, serif;
+
+  --gutter: 24px;
+  --max-body: 640px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-serif-ja);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  text-align: center;
+  padding: var(--gutter);
+}
+
+.placeholder {
+  font-family: var(--font-serif-ja);
+  font-weight: 700;
+  margin: 0;
+}
+
+h1.placeholder {
+  font-size: clamp(2rem, 6vw, 4rem);
+  letter-spacing: 0.1em;
+}
+
+.subtitle {
+  font-family: var(--font-serif-en);
+  color: var(--sumi-light);
+  font-style: italic;
+  margin-top: 0.5em;
+}
