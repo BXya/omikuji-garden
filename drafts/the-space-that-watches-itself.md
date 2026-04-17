@@ -16,8 +16,6 @@ That is the real architectural shift. Space is no longer just a passive containe
 
 ![Planar Motor — objects moving over a field rather than fixed rails](assets/images/the-space-that-watches-itself/refs/planar-motor.avif "Planar Motor field-based movement system — via planarmotor.com")
 
-![Echo Hub dashboard — domestic life mediated through a control surface](assets/images/the-space-that-watches-itself/refs/amazon-echo-hub-review-alexa-s-affordable-smart-home-dashboard.jpg "Amazon Echo Hub review — via The Guardian")
-
 This is where the usual language begins to fail. If you call it convenience, you miss the depth of the change. If you call it surveillance, you often miss the scale. The home is not suddenly becoming a police platform. The more difficult issue is that care itself is being infrastructurally reorganized. The room begins to behave like something between a servant, a nurse, a memory bank, and an administrative system.
 
 That ambiguity matters because domestic care has always involved attention. Someone notices the stale air. Someone remembers where the charger was left. Someone sees that the package by the door has been there too long, that the desk was abandoned at the wrong height, that the room is too warm for the hour, that sleep was not deep enough. An attentive room promises to absorb some of that burden. It offers a home that does not merely house life, but helps hold it together.
