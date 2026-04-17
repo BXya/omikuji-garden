@@ -12,8 +12,6 @@ This is the real shift. The issue is not that the room saves a little time. It i
 
 That change will be sold as convenience, and in one sense it is convenience. Anyone who has spent ten minutes looking for a charger, a wallet, a pair of headphones, or the one adapter that keeps an entire workday from collapsing understands the appeal. The low-grade search consumes attention. It interrupts thought. It adds friction to routines already crowded by too many tasks. A room that can retrieve what you need appears to free you from a thousand trivial irritations.
 
-![Alexa-orchestrated domestic routines](assets/images/a-day-inside-a-space-that-knows-where-everything-is/refs/make-your-home-a-smart-home-with-alexa.jpg "Make your home a smart home with Alexa — via About Amazon")
-
 But convenience is not the whole story. The question is not whether the system works. The question is what kind of person is being trained by a room that knows more and more of the environment on their behalf.
 
 For a long time, furniture and storage operated on a simple premise: the human had to remain legible to themselves. Shelves displayed, drawers grouped, containers signaled, surfaces accumulated. The environment had to be arranged in ways that allowed a person to scan it, remember it, and navigate it. Even when homes were messy, the mess still belonged to a human logic. You knew, or were supposed to know, where things had gone. If you failed, the failure was yours.

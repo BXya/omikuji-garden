@@ -26,9 +26,7 @@ That phrase matters because it names a condition criticism often sees without pr
 
 This helps distinguish very different cases that are often lumped together. A project by Woods may have almost no gap between architectural intensity and artifact because the drawing is already the primary site of the work. A project by a firm like Morphosis may survive into building only in partial form, with the realized object functioning as a reduced translation of a more forceful architectural schema. A routine developer apartment block may begin from such narrow constraints that the gap between what is conceived and what is built is either immense or already built into the commission itself.
 
-![Morphosis, Caltrans District 7 Headquarters — the built translation](assets/images/the-gap/refs/flashback-caltrans-district-7-headquarters-morphosis-architects.jpg "Morphosis, Caltrans District 7 Headquarters — via ArchDaily")
-
-![Maison à Bordeaux — a case where the central concept survives into matter](assets/images/the-gap/refs/maison-bordeaux-on-oma.jpg "OMA, Maison à Bordeaux — via OMA")
+![Maison à Bordeaux — a case where the central concept survives into matter](assets/images/the-gap/refs/gallery-of-ad-classics-maison-bordeaux-oma-1.jpg "OMA, Maison à Bordeaux — via ArchDaily")
 
 These are not the same failures, and criticism that treats them as equivalent becomes blunt very quickly.
 

@@ -4,8 +4,6 @@ At 06:43 the occupant’s breathing changes. Not waking yet. Just the body begin
 
 This is the condition intelligent space wants to normalize: the room notices before you do. It keeps a running account of the environment, your habits, your objects, your rhythms, and it does so in the name of assistance.
 
-![Echo Show on a kitchen counter — ambient domestic intelligence](assets/images/the-space-that-watches-itself/refs/amazon-customers-are-building-smart-homes-with-alexa.jpg "Amazon Echo in the home — via About Amazon")
-
 That sounds benign until you ask the harder question. What exactly is a room becoming when it does not merely respond to life inside it, but attends to that life continuously and begins to act on what it knows?
 
 For a long time, architecture was treated as background. Rooms contained activity, but did not actively interpret it. Even “smart” systems mostly waited for instructions: dim the lights, lower the blinds, start the heat, lock the door. The room was reactive. It became intelligent only when summoned.
