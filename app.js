@@ -161,7 +161,7 @@ function draw() {
   }, { once: true });
 
   // Move keyboard focus to the next action for accessibility.
-  document.getElementById("btn-flip").focus();
+  document.getElementById("btn-flip").focus({ preventScroll: true });
 }
 
 function returnToSignbox() {
@@ -171,7 +171,7 @@ function returnToSignbox() {
   setStage("signbox");
   state.currentFortune = null;
   state.currentArticle = null;
-  document.getElementById("signbox").focus();
+  document.getElementById("signbox").focus({ preventScroll: true });
 }
 
 function openArticle(article) {
@@ -185,8 +185,10 @@ function openArticle(article) {
   overlay.scrollTop = 0;
   // Lock the underlying scene so Tab stays inside the dialog.
   document.querySelector(".scene").inert = true;
-  // Move focus into the overlay for keyboard navigation
-  document.getElementById("btn-redraw-from-article").focus();
+  // Move focus into the overlay for keyboard navigation. preventScroll keeps
+  // the overlay at the top — without it, the browser auto-scrolls the focused
+  // bottom button into view, dropping the reader mid-article.
+  document.getElementById("btn-redraw-from-article").focus({ preventScroll: true });
 }
 
 function closeArticle() {
@@ -196,7 +198,7 @@ function closeArticle() {
   // Return focus to the Flip button (logical back-target). It's still in
   // the DOM while the stick stage is visible.
   const flip = document.getElementById("btn-flip");
-  if (flip && !flip.closest("[hidden]")) flip.focus();
+  if (flip && !flip.closest("[hidden]")) flip.focus({ preventScroll: true });
 }
 
 function wireEvents() {
