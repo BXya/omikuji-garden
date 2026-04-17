@@ -73,6 +73,10 @@ const state = {
   articles: [],
   currentFortune: null,
   currentArticle: null,
+  // Track draws within the session so the same card doesn't appear twice
+  // until its pool is exhausted. Cleared on page reload.
+  seenFortuneIds: new Set(),
+  seenArticleIds: new Set(),
 };
 
 async function loadData() {
@@ -87,25 +91,45 @@ async function loadData() {
   return { fortunes: fd.fortunes, articles: ad.articles };
 }
 
-/** Unbiased random pick of one fortune. */
-function pickFortune(fortunes) {
-  const i = Math.floor(Math.random() * fortunes.length);
-  return fortunes[i];
+/** Uniform random pick of one fortune from the pool, skipping ids already in `seen`.
+ *  When every fortune has been seen, reset `seen` and pick fresh. Mutates `seen`. */
+function pickFortune(fortunes, seen) {
+  let available = fortunes.filter((f) => !seen.has(f.id));
+  if (!available.length) {
+    seen.clear();
+    available = fortunes;
+    console.log("[omikuji-garden] fortune pool exhausted — reshuffled");
+  }
+  const f = available[Math.floor(Math.random() * available.length)];
+  seen.add(f.id);
+  return f;
 }
 
-/** Weighted random pick of one article. Article weights default to 1.
- *  Canonical formulation: accumulate weights, find first prefix that exceeds r.
- *  Returns the last article as a safety fallback (unreachable with non-negative weights). */
-function pickArticle(articles) {
-  const total = articles.reduce((s, a) => s + (a.weight ?? 1), 0);
-  if (total <= 0) return articles[Math.floor(Math.random() * articles.length)];
+/** Weighted random pick of one article from the pool, skipping ids already in `seen`.
+ *  When every article has been seen, reset `seen` and pick fresh. Weighted only
+ *  among the unseen subset. Mutates `seen`. */
+function pickArticle(articles, seen) {
+  let available = articles.filter((a) => !seen.has(a.id));
+  if (!available.length) {
+    seen.clear();
+    available = articles;
+    console.log("[omikuji-garden] article pool exhausted — reshuffled");
+  }
+  const total = available.reduce((s, a) => s + (a.weight ?? 1), 0);
+  if (total <= 0) {
+    const a = available[Math.floor(Math.random() * available.length)];
+    seen.add(a.id);
+    return a;
+  }
   const r = Math.random() * total;
   let acc = 0;
-  for (const a of articles) {
+  for (const a of available) {
     acc += (a.weight ?? 1);
-    if (r < acc) return a;
+    if (r < acc) { seen.add(a.id); return a; }
   }
-  return articles[articles.length - 1];
+  const fallback = available[available.length - 1];
+  seen.add(fallback.id);
+  return fallback;
 }
 
 function setStage(stage) {
@@ -121,8 +145,8 @@ function renderStickFront(fortune) {
 
 function draw() {
   if (!state.fortunes.length) return; // guard: data not yet loaded
-  state.currentFortune = pickFortune(state.fortunes);
-  state.currentArticle = pickArticle(state.articles);
+  state.currentFortune = pickFortune(state.fortunes, state.seenFortuneIds);
+  state.currentArticle = pickArticle(state.articles, state.seenArticleIds);
   renderStickFront(state.currentFortune);
 
   const stage = document.getElementById("stick-stage");
