@@ -32,8 +32,6 @@ But even a fully local system would not solve the whole problem. Keeping the int
 
 A room that watches itself changes the atmosphere of dwelling even if its data never leaves the walls. It changes the home from a place that is lived in to a place that increasingly interprets its own living conditions. The room becomes the first noticer. It becomes the thing that notices that you are returning to wakefulness, that the air needs correction, that the object is misplaced, that the desk is wrong, that the package is still there. The inhabitant does not stop living there. But the inhabitant is no longer alone in the work of registering what the room contains and what the room needs.
 
-![Calm modern living room — the watchful interior](assets/images/the-space-that-watches-itself/refs/modern-living-room-jpg.jpg "Modern living room — via Wikimedia Commons")
-
 That can look like care. Sometimes it is care. But care is not innocent just because it is helpful. A system that notices first can also train the people inside it to notice less, to rely more, to accept a domestic environment that quietly supervises the continuity of life on their behalf.
 
 This is the line intelligent domestic space has to be judged against. Does the room make the household more capable, more attentive, more in command of its own environment? Or does it make the household more passive by taking over too much of the perceptual work that living somewhere once required?
