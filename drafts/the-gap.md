@@ -26,8 +26,6 @@ That phrase matters because it names a condition criticism often sees without pr
 
 This helps distinguish very different cases that are often lumped together. A project by Woods may have almost no gap between architectural intensity and artifact because the drawing is already the primary site of the work. A project by a firm like Morphosis may survive into building only in partial form, with the realized object functioning as a reduced translation of a more forceful architectural schema. A routine developer apartment block may begin from such narrow constraints that the gap between what is conceived and what is built is either immense or already built into the commission itself.
 
-![Maison à Bordeaux — a case where the central concept survives into matter](assets/images/the-gap/refs/gallery-of-ad-classics-maison-bordeaux-oma-1.jpg "OMA, Maison à Bordeaux — via ArchDaily")
-
 These are not the same failures, and criticism that treats them as equivalent becomes blunt very quickly.
 
 Woods gives the sharpest formulation: you have described the resolution of the translation, not the resolution of the architecture. That is the distinction most reviews, awards, and everyday judgments still fail to make. They look at a diminished built object and conclude that the architecture itself lacked force. They do not ask whether force was designed out of it, priced out of it, coordinated out of it, legislated out of it, or made administratively impossible.

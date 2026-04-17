@@ -18,8 +18,6 @@ For a long time, furniture and storage operated on a simple premise: the human h
 
 An intelligent room changes that arrangement. The environment no longer has to remain legible in the same way because the index has moved elsewhere. Retrieval no longer depends on your spatial familiarity. It depends on the room’s ability to identify, classify, and return. This is not just a better shelf. It is a different allocation of domestic agency.
 
-![Maison à Bordeaux — architecture that already makes indexing spatial](assets/images/a-day-inside-a-space-that-knows-where-everything-is/refs/ad-classics-maison-bordeaux-oma.jpg "OMA, Maison à Bordeaux — via ArchDaily")
-
 That phrase matters. Domestic agency includes the small competences by which a person remains oriented inside their own life: knowing where things are, how they are grouped, what habits have formed around them, what accumulations are becoming burdens, what surfaces have turned into thresholds of use or neglect. These are not grand acts of sovereignty. They are ordinary acts of inhabitation. They are how a home becomes more than a backdrop.
 
 When the room takes over that work, something is gained. But something is also thinned out. Spatial familiarity weakens. Practiced orientation weakens. Self-sorting weakens. A person may still occupy the space, but they do so with less direct knowledge of how their own environment is held together. The room becomes the primary knower. The inhabitant becomes the consulter.

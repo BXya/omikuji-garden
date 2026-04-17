@@ -8,8 +8,6 @@ That decision does not stop being political because it is made by an ambient sys
 
 This is the problem that disappears when intelligent space is described as if it were only a better version of individual customization. Personalization sounds benign because it imagines one subject, one profile, one stream of preferences. That was the logic behind a famous house like Bordeaux: one body, one trajectory, one set of needs strong enough to reorganize the building around it. The architecture could respond because the subject was singular.
 
-![Maison à Bordeaux — architecture organized around a singular subject](assets/images/whose-resolution-governs/refs/gallery-of-ad-classics-maison-bordeaux-oma-6.jpg "OMA, Maison à Bordeaux — via ArchDaily")
-
 A household is not singular. It is shared, contradictory, negotiated, and uneven. The intelligence that seems elegant at the scale of one person becomes something else at the scale of many. A system may be able to handle several requests at once. That is not the same thing as handling several subjects as equals.
 
 Concurrent tasks are easy. A retrieval request and a lighting adjustment can happen at once. Concurrent subjects are harder. If two people want different temperatures from the same room, there is no neutral answer. The system has to average them, rank them, alternate between them, defer to whoever arrived first, defer to whoever has priority status, or infer a hierarchy from previous behavior. However it does that, it is not merely serving the household. It is governing it.
