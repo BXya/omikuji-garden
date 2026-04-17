@@ -4,17 +4,23 @@ The first thing you notice is not what the space does. It is what you stop doing
 
 You stop the low-level search that fills ordinary life: where the keys ended up, which drawer the charger disappeared into, which cable is the one that still works, what surface became the holding zone for the object you now need. In a room that has indexed its contents, that work is no longer yours in the same way. You ask for the thing that charges the phone, and the room gives you the answer.
 
+![Echo device on a kitchen counter — the room as indexing system](assets/images/a-day-inside-a-space-that-knows-where-everything-is/refs/amazon-customers-are-building-smart-homes-with-alexa.jpg "Amazon Echo in the home — via About Amazon")
+
 That sounds minor. It is not. A small but constant layer of domestic knowledge has been transferred out of the inhabitant and into the environment. The room is no longer just where your things are. It has become the system that knows where they are, and you have begun to live by consulting it.
 
 This is the real shift. The issue is not that the room saves a little time. It is that a task once woven into inhabitation itself, remembering your own environment, is being quietly reassigned. The room becomes more knowing. The inhabitant becomes less practiced in knowing it.
 
 That change will be sold as convenience, and in one sense it is convenience. Anyone who has spent ten minutes looking for a charger, a wallet, a pair of headphones, or the one adapter that keeps an entire workday from collapsing understands the appeal. The low-grade search consumes attention. It interrupts thought. It adds friction to routines already crowded by too many tasks. A room that can retrieve what you need appears to free you from a thousand trivial irritations.
 
+![Alexa-orchestrated domestic routines](assets/images/a-day-inside-a-space-that-knows-where-everything-is/refs/make-your-home-a-smart-home-with-alexa.jpg "Make your home a smart home with Alexa — via About Amazon")
+
 But convenience is not the whole story. The question is not whether the system works. The question is what kind of person is being trained by a room that knows more and more of the environment on their behalf.
 
 For a long time, furniture and storage operated on a simple premise: the human had to remain legible to themselves. Shelves displayed, drawers grouped, containers signaled, surfaces accumulated. The environment had to be arranged in ways that allowed a person to scan it, remember it, and navigate it. Even when homes were messy, the mess still belonged to a human logic. You knew, or were supposed to know, where things had gone. If you failed, the failure was yours.
 
 An intelligent room changes that arrangement. The environment no longer has to remain legible in the same way because the index has moved elsewhere. Retrieval no longer depends on your spatial familiarity. It depends on the room’s ability to identify, classify, and return. This is not just a better shelf. It is a different allocation of domestic agency.
+
+![Maison à Bordeaux — architecture that already makes indexing spatial](assets/images/a-day-inside-a-space-that-knows-where-everything-is/refs/ad-classics-maison-bordeaux-oma.jpg "OMA, Maison à Bordeaux — via ArchDaily")
 
 That phrase matters. Domestic agency includes the small competences by which a person remains oriented inside their own life: knowing where things are, how they are grouped, what habits have formed around them, what accumulations are becoming burdens, what surfaces have turned into thresholds of use or neglect. These are not grand acts of sovereignty. They are ordinary acts of inhabitation. They are how a home becomes more than a backdrop.
 

@@ -51,6 +51,8 @@ Proposal is not optimism. It is not branding the future. It is the refusal to le
 
 The profession should be judged by that standard.
 
+![Social housing blocks wrapping around collective courtyards](assets/images/architects-mission/refs/4-social-housing-developments-that-wrap-around-central-courtyards.jpg "Social housing wrapped around central courtyards — via ArchDaily")
+
 Can it respond to financialized housing with models of dwelling that are less extractive and more collective?
 Can it respond to shrinking public life by making spaces where people are not treated only as consumers, tenants, or security variables?
 Can it respond to optimization logic by defending forms of space that allow slowness, ambiguity, encounter, and use not already predefined by management systems?
@@ -59,6 +61,8 @@ Can it respond to the reduction of design labor into delivery and formatting by 
 If the answer is no, then architecture has very little to defend. It will continue to exist as an industry function, but not as a serious public practice.
 
 If the answer is yes, that value will not be proved through rhetoric about creativity or relevance. It will be proved wherever architects can still organize fragments of a more livable future before that future is guaranteed: in housing types that refuse pure financial logic, in public thresholds that create encounter instead of exclusion, in infrastructures of daily life that support dignity instead of mere throughput, in prototypes and retrofits that make another arrangement tangible and therefore arguable.
+
+![Patio of Ferrer Forés social courtyard houses in Es Mercadal](assets/images/architects-mission/refs/courtyard-social-houses-in-es-mercadal-ferrer-for-s.jpg "Courtyard Social Houses in Es Mercadal, Ferrer Forés — via ArchDaily")
 
 This is not an excuse for self-importance. Architecture does not become valuable by declaring itself necessary. It becomes valuable only where it refuses to confuse compliance with responsibility, efficiency with intelligence, or market realism with the limits of life.
 

@@ -10,6 +10,8 @@ That is why the strongest examples of “open” architecture are often the ones
 
 Constant Nieuwenhuys’s New Babylon remains the exemplary case. Conceived as a vast reconfigurable world for homo ludens, the playing human released from labor, it imagined sectors that would be continuously transformed by their inhabitants. The ambition was radical: architecture would no longer deliver fixed forms of life but provide an armature on which collective improvisation could unfold over time.
 
+![Constant Nieuwenhuys, New Babylon models on permanent display](assets/images/the-armature-problem/refs/constant-new-babylon-on-permanent-display.jpg "Constant, New Babylon — via Kunstmuseum Den Haag")
+
 The promise is easy to admire. The difficulty is harder to ignore.
 
 As Lebbeus Woods put it, New Babylon’s architecture was meant to provide “a complex armature on which could be woven endlessly new, unpredictably personal urban experiences, determined by ever-changing individual desires.” That is the ideal version of an open system: the structure supports life without predetermining it, receives charge from its users, and stays available to uses the architect could not name in advance.
@@ -27,6 +29,8 @@ This is the central contradiction of the armature problem. The very qualities th
 That is why the problem should not be reduced to flexibility. A system can be reconfigurable and still overdetermine what it contains. Parts can move while the armature remains the dominant semantic fact. Variation can occur without ever displacing the framework’s authorship. The question is not whether things can change inside the structure. The question is whether the structure leaves enough room for life to become the primary source of meaning.
 
 This is where a harder position becomes necessary: deferring.
+
+![New Babylon exhibition view at Museo Reina Sofía](assets/images/the-armature-problem/refs/constant-new-babylon-at-museo-reina-sof-a.webp "Constant, New Babylon exhibition — via Museo Reina Sofía")
 
 A deferring armature would not be mute in the literal sense. No structure is ever truly without expression. The point is more exact than that. A deferring armature is one whose formal and structural presence stays below the threshold at which it begins to dominate the semantic field. It remains available to be charged from outside. It supports without overnarrating. It holds continuity without insisting too strongly on what continuity means.
 

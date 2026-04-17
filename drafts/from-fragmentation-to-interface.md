@@ -24,6 +24,10 @@ This is why interface is not secondary to architecture. It is architectural.
 
 The clearest proof is a house like OMA’s Maison à Bordeaux. Its famous moving platform is not an add-on gadget to an otherwise stable form. It is the mechanism through which the house reorganizes itself around its inhabitant. At one level it completes the kitchen, at another it becomes part of the living space, above it turns into a study. The architecture does not simply contain motion. It is constituted by the changing interface through which one condition becomes another.
 
+![Maison à Bordeaux exterior — the cantilevered upper volume](assets/images/from-fragmentation-to-interface/refs/maison-bordeaux-on-oma.jpg "OMA, Maison à Bordeaux — via OMA")
+
+![Interior view showing the moving platform as spatial heart](assets/images/from-fragmentation-to-interface/refs/gallery-of-ad-classics-maison-bordeaux-oma-3.jpg "Maison à Bordeaux, platform interior — via ArchDaily")
+
 That distinction matters. If you describe Bordeaux only as a striking house with an elevator, you miss the argument. The platform is not a service device inserted into a finished object. It is the heart of the spatial system. It governs relation across levels, rooms, uses, and bodily needs. It is not merely in the architecture. It is what makes the architecture dynamic in the first place.
 
 This is the broader lesson fragmentation on its own cannot teach. Fragments can remain isolated. They can coexist without collective consequence. They can produce a field of options that never becomes a field of relation. Interface is what moves architecture beyond formal plurality toward actual negotiation. It is what allows space to open, close, hand over, admit, defer, and recompose itself in time.

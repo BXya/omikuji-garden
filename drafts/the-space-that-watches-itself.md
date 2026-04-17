@@ -4,6 +4,8 @@ At 06:43 the occupant’s breathing changes. Not waking yet. Just the body begin
 
 This is the condition intelligent space wants to normalize: the room notices before you do. It keeps a running account of the environment, your habits, your objects, your rhythms, and it does so in the name of assistance.
 
+![Echo Show on a kitchen counter — ambient domestic intelligence](assets/images/the-space-that-watches-itself/refs/amazon-customers-are-building-smart-homes-with-alexa.jpg "Amazon Echo in the home — via About Amazon")
+
 That sounds benign until you ask the harder question. What exactly is a room becoming when it does not merely respond to life inside it, but attends to that life continuously and begins to act on what it knows?
 
 For a long time, architecture was treated as background. Rooms contained activity, but did not actively interpret it. Even “smart” systems mostly waited for instructions: dim the lights, lower the blinds, start the heat, lock the door. The room was reactive. It became intelligent only when summoned.
@@ -11,6 +13,8 @@ For a long time, architecture was treated as background. Rooms contained activit
 An attentive room is different. It is not defined by isolated commands. It is defined by continuity of notice. It tracks the drift of the air while you sleep, the object left near the entrance, the desk position that suggests yesterday’s work never quite ended, the pattern of motion that says morning is approaching. It does not simply store settings. It accumulates a memory of life in place.
 
 That is the real architectural shift. Space is no longer just a passive container with automated accessories attached. It becomes active infrastructure: not in the inflated sense of branding every sensor as revolutionary, but in the literal sense that the room now participates in the ongoing organization of domestic life. It notices, recalls, infers, prepares.
+
+![Echo Hub dashboard — domestic life mediated through a control surface](assets/images/the-space-that-watches-itself/refs/amazon-echo-hub-review-alexa-s-affordable-smart-home-dashboard.jpg "Amazon Echo Hub review — via The Guardian")
 
 This is where the usual language begins to fail. If you call it convenience, you miss the depth of the change. If you call it surveillance, you often miss the scale. The home is not suddenly becoming a police platform. The more difficult issue is that care itself is being infrastructurally reorganized. The room begins to behave like something between a servant, a nurse, a memory bank, and an administrative system.
 
@@ -29,6 +33,8 @@ To say the intelligence should stay local is to say that the room’s knowledge 
 But even a fully local system would not solve the whole problem. Keeping the intelligence in the room addresses who holds the memory. It does not settle what that memory does to the relation between inhabitant and environment.
 
 A room that watches itself changes the atmosphere of dwelling even if its data never leaves the walls. It changes the home from a place that is lived in to a place that increasingly interprets its own living conditions. The room becomes the first noticer. It becomes the thing that notices that you are returning to wakefulness, that the air needs correction, that the object is misplaced, that the desk is wrong, that the package is still there. The inhabitant does not stop living there. But the inhabitant is no longer alone in the work of registering what the room contains and what the room needs.
+
+![Calm modern living room — the watchful interior](assets/images/the-space-that-watches-itself/refs/modern-living-room-jpg.jpg "Modern living room — via Wikimedia Commons")
 
 That can look like care. Sometimes it is care. But care is not innocent just because it is helpful. A system that notices first can also train the people inside it to notice less, to rely more, to accept a domestic environment that quietly supervises the continuity of life on their behalf.
 

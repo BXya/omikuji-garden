@@ -14,6 +14,8 @@ That is a mistake. It allows the systems that strip architecture down to disappe
 
 A useful way to sharpen the issue comes from Lebbeus Woods, who made the boundary between drawing and building harder to sustain. “I feel I’m making architecture,” he said. “I believe the building comes into existence as soon as it’s drawn.” In another conversation: “When you make a drawing, that is not a fantasy at all. That is reality.”
 
+![Lebbeus Woods, Photon Kite — the drawing as architecture](assets/images/the-gap/refs/lebbeus-woods-the-architect-who-dared-to-ask-what-if.jpg "Lebbeus Woods, Photon Kite — via WIRED / SFMOMA")
+
 The point is not that every drawing should be treated as equivalent to construction. The point is that architecture does not begin only when procurement allows it to harden into matter. There is an architectural project before there is a delivered object, and the two are not always the same thing.
 
 Once that is admitted, a harder critical question becomes unavoidable. Not simply: what is the building like? But: what happened between the architecture and its realization? How much was translated, and how much was lost?
@@ -23,6 +25,10 @@ Call it resolution loss in translation.
 That phrase matters because it names a condition criticism often sees without properly describing. A building may carry traces of a stronger architecture that did not survive the trip into construction. A drawing may organize relations, tensions, risks, formal pressure, or spatial intelligence that the built version can only partially hold. What the critic experiences at the end is not pure architecture, nor pure failure, but an artifact of mediated delivery.
 
 This helps distinguish very different cases that are often lumped together. A project by Woods may have almost no gap between architectural intensity and artifact because the drawing is already the primary site of the work. A project by a firm like Morphosis may survive into building only in partial form, with the realized object functioning as a reduced translation of a more forceful architectural schema. A routine developer apartment block may begin from such narrow constraints that the gap between what is conceived and what is built is either immense or already built into the commission itself.
+
+![Morphosis, Caltrans District 7 Headquarters — the built translation](assets/images/the-gap/refs/flashback-caltrans-district-7-headquarters-morphosis-architects.jpg "Morphosis, Caltrans District 7 Headquarters — via ArchDaily")
+
+![Maison à Bordeaux — a case where the central concept survives into matter](assets/images/the-gap/refs/maison-bordeaux-on-oma.jpg "OMA, Maison à Bordeaux — via OMA")
 
 These are not the same failures, and criticism that treats them as equivalent becomes blunt very quickly.
 

@@ -22,7 +22,13 @@ Commons depends on a stronger condition: not just entry, but transformability.
 
 A space becomes commons-capable when its organization allows collective life to leave marks that matter. When people can adjust it, patch it, reinterpret it, substitute parts, claim tactical room inside it, and keep reworking the relations that hold it together. Commons is not simply being let in. It is being able to participate in what the thing becomes.
 
+![Moshe Safdie, Habitat 67 — stacked units as distributed agency](assets/images/resolution-as-commons/refs/architecture-classics-habitat-67-safdie-architects.jpg "Habitat 67, Safdie Architects — via ArchDaily")
+
 You can see the difference in ordinary housing. In one building, residents can add a shelf, replace a panel, divide a room, repair a broken element, or adapt a shared landing for actual use without triggering damage, violation notices, or specialist intervention. In another, the corridor is fixed, the unit is sealed, every alteration is treated as noncompliance, and even minor repair depends on distant authority. Both may count as “housing access.” Only one distributes permission.
+
+![Restored unit interior at Habitat 67 — repair as normal act of use](assets/images/resolution-as-commons/refs/safdie-architects-completes-an-extensive-restoration-of-unit-at-habitat-67.jpg "Safdie Architects, Habitat 67 unit restoration — via ArchDaily")
+
+![Ferrer Forés courtyard social housing in Es Mercadal — commons-capable field](assets/images/resolution-as-commons/refs/courtyard-social-houses-in-es-mercadal-ferrer-for-s.jpg "Courtyard Social Houses in Es Mercadal, Ferrer Forés — via ArchDaily")
 
 This is why detail should be read as governance. It allocates agency. It decides whether the environment can absorb negotiation or whether every departure from the intended use will be treated as error, damage, or vandalism. It decides whether the system multiplies possible relations over time or hardens into a single authorized configuration. It decides whether users become authors or spectators.
 

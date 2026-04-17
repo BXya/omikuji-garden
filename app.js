@@ -46,6 +46,16 @@ function renderMarkdown(src) {
     if (line.startsWith("# "))   { flushPara(); flushQuote(); continue; } // H1 owned by title, skip in body
     if (line === "---")          { flushPara(); flushQuote(); out.push("<hr/>"); continue; }
     if (line.startsWith("&gt; ")) { flushPara(); quote.push(line.slice(5)); continue; }
+    const imgMatch = line.match(/^!\[([^\]]*)\]\(([^)\s]+)(?:\s+"([^"]*)")?\)$/);
+    if (imgMatch) {
+      flushPara(); flushQuote();
+      const alt = imgMatch[1];
+      const src = imgMatch[2];
+      const caption = imgMatch[3] || "";
+      const captionHtml = caption ? `<figcaption>${inline(caption)}</figcaption>` : "";
+      out.push(`<figure class="article-inline-figure"><img src="${src}" alt="${alt}" loading="lazy" decoding="async" />${captionHtml}</figure>`);
+      continue;
+    }
     flushQuote();
     para.push(line);
   }
