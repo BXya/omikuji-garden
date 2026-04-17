@@ -5,10 +5,8 @@
   --moss:       #4a5a3a;
   --sumi-light: #5c5c5c;
 
-  --font-serif-ja: "Shippori Mincho", "Noto Serif JP",
-                   "Hiragino Mincho ProN", "Yu Mincho", serif;
-  --font-serif-zh: "Noto Serif SC", "Songti SC", "STSong", serif;
-  --font-serif-en: "EB Garamond", Georgia, serif;
+  --font-serif:   "EB Garamond", Georgia, "Times New Roman", serif;
+  --font-display: "EB Garamond", Georgia, serif;
 
   --gutter: 24px;
   --max-body: 640px;
@@ -22,7 +20,7 @@ html, body {
   min-height: 100dvh;
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--font-serif-ja);
+  font-family: var(--font-serif);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -123,7 +121,7 @@ body {
 .signbox-label {
   position: relative;
   z-index: 2;
-  font-family: var(--font-serif-ja);
+  font-family: var(--font-serif);
   font-size: 0.95rem;
   color: var(--sumi-light);
   letter-spacing: 0.08em;
@@ -199,43 +197,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-serif-ja);
+  font-family: var(--font-serif);
   font-weight: 900;
-  font-size: 1.05rem;
+  font-size: 0.5rem;
+  line-height: 1.15;
+  padding: 0 4px;
+  text-align: center;
   letter-spacing: 0.02em;
   box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.35);
   transform: rotate(-4deg);
 }
 
 .fortune-text {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  font-family: var(--font-serif-ja);
-  font-size: 1rem;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
   line-height: 1.8;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.04em;
   color: var(--ink);
-  max-height: 60%;
-  text-align: start;
-}
-
-.fortune-gloss {
-  font-family: var(--font-serif-zh);
-  font-size: 0.72rem;
-  line-height: 1.5;
-  color: var(--sumi-light);
-  writing-mode: horizontal-tb;
-  padding: 0 0.5rem;
-  margin-top: auto;
+  max-width: 88%;
   text-align: center;
-  max-width: 100%;
 }
 
 .stick-number {
-  font-family: var(--font-serif-ja);
+  font-family: var(--font-serif);
   font-size: 0.7rem;
   color: var(--sumi-light);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
 }
 
 /* Stick entrance animation: slides from below viewport */
@@ -257,7 +244,7 @@ body {
 }
 
 .btn {
-  font-family: var(--font-serif-ja);
+  font-family: var(--font-serif);
   font-size: 0.95rem;
   letter-spacing: 0.08em;
   padding: 0.75rem 1.4rem;
@@ -311,7 +298,7 @@ body {
 .article {
   max-width: var(--max-body);
   margin: 0 auto;
-  font-family: var(--font-serif-en);
+  font-family: var(--font-serif);
 }
 
 .article-header {
@@ -320,36 +307,26 @@ body {
 }
 
 .article-title {
-  writing-mode: vertical-rl;
-  font-family: var(--font-serif-ja);
+  font-family: var(--font-serif);
   font-size: clamp(1.8rem, 4vw, 2.6rem);
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.03em;
   color: var(--ink);
   line-height: 1.4;
   margin: 0 auto 1rem;
-  max-height: 280px;
-  display: inline-block;
-}
-
-.article-title-en {
-  font-family: var(--font-serif-en);
-  font-style: italic;
-  font-size: 1rem;
-  color: var(--sumi-light);
-  margin: 0;
-  letter-spacing: 0.04em;
+  max-height: none;
+  display: block;
 }
 
 .article-body {
-  font-family: var(--font-serif-zh);
+  font-family: var(--font-serif);
   font-size: 1.02rem;
   line-height: 1.9;
   color: var(--ink);
 }
 
 .article-body h2 {
-  font-family: var(--font-serif-ja);
+  font-family: var(--font-serif);
   font-size: 1.35rem;
   margin: 2.5rem 0 1rem;
   padding-left: 0.8rem;
@@ -358,7 +335,7 @@ body {
 }
 
 .article-body h3 {
-  font-family: var(--font-serif-ja);
+  font-family: var(--font-serif);
   font-size: 1.1rem;
   margin: 1.8rem 0 0.6rem;
   color: var(--sumi-light);
@@ -421,9 +398,8 @@ body {
     max-height: 480px;
   }
 
-  .fortune-seal { width: 48px; height: 48px; font-size: 0.95rem; }
+  .fortune-seal { width: 48px; height: 48px; font-size: 0.44rem; }
   .fortune-text { font-size: 0.9rem; }
-  .fortune-gloss { font-size: 0.66rem; }
 
   .overlay {
     padding:
@@ -435,12 +411,8 @@ body {
 
   .article-body { font-size: 0.98rem; line-height: 1.8; }
   .article-title {
-    writing-mode: horizontal-tb;
-    max-height: none;
     font-size: 1.6rem;
-    letter-spacing: 0.08em;
-    display: block;
-    text-align: center;
+    letter-spacing: 0.03em;
   }
 
   .stick-actions, .article-actions { flex-direction: column; width: 100%; }

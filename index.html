@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>御神籤の庭 · omikuji-garden</title>
-  <meta name="description" content="A digital garden framed as a Japanese omikuji shrine." />
+  <title>Omikuji Garden</title>
+  <meta name="description" content="A digital garden framed as an omikuji shrine. Draw a bamboo fortune stick to reveal today's recommended article." />
   <meta name="color-scheme" content="light" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700;900&family=Noto+Serif+JP:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -49,25 +46,24 @@
         </svg>
       </button>
 
-      <p class="signbox-label" id="signbox-label"><span lang="zh">在此抽一签</span> · <span lang="en">Tap the signbox to draw</span></p>
+      <p class="signbox-label" id="signbox-label">Tap the signbox to draw</p>
 
     <!-- Drawn-stick stage (hidden until draw) -->
     <section class="stick-stage" id="stick-stage" hidden>
       <div class="stick" id="stick" data-face="front">
         <!-- Front face: fortune -->
         <div class="stick-face stick-face--front">
-          <div class="fortune-seal" id="fortune-seal" aria-label="運勢">大吉</div>
-          <div class="fortune-text" id="fortune-text-ja" lang="ja"></div>
-          <div class="fortune-gloss" id="fortune-text-zh" lang="zh-CN"></div>
-          <div class="stick-number" id="stick-number">第〇番</div>
+          <div class="fortune-seal" id="fortune-seal" aria-label="Fortune level">Great Fortune</div>
+          <div class="fortune-text" id="fortune-text"></div>
+          <div class="stick-number" id="stick-number">No. 0</div>
         </div>
         <!-- Back face populated in Slice 5 -->
         <div class="stick-face stick-face--back" aria-hidden="true"></div>
       </div>
 
       <div class="stick-actions">
-        <button type="button" class="btn btn--primary" id="btn-flip">翻开签背 · Flip</button>
-        <button type="button" class="btn btn--ghost"   id="btn-redraw">回签筒 · Return</button>
+        <button type="button" class="btn btn--primary" id="btn-flip">Flip the stick</button>
+        <button type="button" class="btn btn--ghost"   id="btn-redraw">Return</button>
       </div>
     </section>
     </div>
@@ -76,13 +72,12 @@
     <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="overlay-title" hidden>
       <article class="article">
         <header class="article-header">
-          <h1 class="article-title" id="overlay-title" lang="zh-CN"></h1>
-          <p class="article-title-en" id="overlay-title-en" lang="en"></p>
+          <h1 class="article-title" id="overlay-title"></h1>
         </header>
         <div class="article-body" id="overlay-body"></div>
         <footer class="article-actions">
-          <button type="button" class="btn btn--primary" id="btn-redraw-from-article">再抽一签 · Draw again</button>
-          <button type="button" class="btn btn--ghost"   id="btn-close-article">回签筒 · Return</button>
+          <button type="button" class="btn btn--primary" id="btn-redraw-from-article">Draw again</button>
+          <button type="button" class="btn btn--ghost"   id="btn-close-article">Return</button>
         </footer>
       </article>
     </div>

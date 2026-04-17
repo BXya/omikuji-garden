@@ -100,10 +100,9 @@ function setStage(stage) {
 
 function renderStickFront(fortune) {
   document.getElementById("fortune-seal").textContent = fortune.level;
-  document.getElementById("fortune-seal").setAttribute("aria-label", `運勢: ${fortune.level}`);
-  document.getElementById("fortune-text-ja").textContent = fortune.text_ja;
-  document.getElementById("fortune-text-zh").textContent = fortune.text_zh;
-  document.getElementById("stick-number").textContent = `第 ${fortune.id} 番`;
+  document.getElementById("fortune-seal").setAttribute("aria-label", `Fortune level: ${fortune.level}`);
+  document.getElementById("fortune-text").textContent = fortune.text;
+  document.getElementById("stick-number").textContent = `No. ${fortune.id}`;
 }
 
 function draw() {
@@ -143,11 +142,9 @@ function returnToSignbox() {
 
 function openArticle(article) {
   const titleEl = document.getElementById("overlay-title");
-  const titleEnEl = document.getElementById("overlay-title-en");
   const bodyEl = document.getElementById("overlay-body");
   // Fallback if an article somehow has no title — keeps the dialog labelable.
-  titleEl.textContent = article.title || "無題 · Untitled";
-  titleEnEl.textContent = article.titleEn || "";
+  titleEl.textContent = article.title || "Untitled";
   bodyEl.innerHTML = renderMarkdown(article.body || "");
   const overlay = document.getElementById("overlay");
   overlay.hidden = false;
