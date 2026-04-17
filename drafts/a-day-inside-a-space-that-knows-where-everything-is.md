@@ -2,6 +2,8 @@
 
 The first thing you notice is not what the space does. It is what you stop doing.
 
+![Ori Studio — a single room transforming through a day of dwelling](assets/images/a-day-inside-a-space-that-knows-where-everything-is/refs/ori-studio.gif "Ori Studio — via oriliving.com")
+
 You stop the low-level search that fills ordinary life: where the keys ended up, which drawer the charger disappeared into, which cable is the one that still works, what surface became the holding zone for the object you now need. In a room that has indexed its contents, that work is no longer yours in the same way. You ask for the thing that charges the phone, and the room gives you the answer.
 
 ![Echo device on a kitchen counter — the room as indexing system](assets/images/a-day-inside-a-space-that-knows-where-everything-is/refs/amazon-customers-are-building-smart-homes-with-alexa.jpg "Amazon Echo in the home — via About Amazon")
@@ -17,6 +19,8 @@ But convenience is not the whole story. The question is not whether the system w
 For a long time, furniture and storage operated on a simple premise: the human had to remain legible to themselves. Shelves displayed, drawers grouped, containers signaled, surfaces accumulated. The environment had to be arranged in ways that allowed a person to scan it, remember it, and navigate it. Even when homes were messy, the mess still belonged to a human logic. You knew, or were supposed to know, where things had gone. If you failed, the failure was yours.
 
 An intelligent room changes that arrangement. The environment no longer has to remain legible in the same way because the index has moved elsewhere. Retrieval no longer depends on your spatial familiarity. It depends on the room’s ability to identify, classify, and return. This is not just a better shelf. It is a different allocation of domestic agency.
+
+![MIT on Ori — robotic furniture treating the room as addressable storage](assets/images/a-day-inside-a-space-that-knows-where-everything-is/refs/mit-ori.jpg "Ori robotic furniture — via MIT News")
 
 That phrase matters. Domestic agency includes the small competences by which a person remains oriented inside their own life: knowing where things are, how they are grouped, what habits have formed around them, what accumulations are becoming burdens, what surfaces have turned into thresholds of use or neglect. These are not grand acts of sovereignty. They are ordinary acts of inhabitation. They are how a home becomes more than a backdrop.
 

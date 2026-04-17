@@ -4,6 +4,8 @@ At 06:43 the occupant’s breathing changes. Not waking yet. Just the body begin
 
 This is the condition intelligent space wants to normalize: the room notices before you do. It keeps a running account of the environment, your habits, your objects, your rhythms, and it does so in the name of assistance.
 
+![AIRSKIN — modular white skin for robotic surfaces](assets/images/the-space-that-watches-itself/refs/airskin-technology.webp "AIRSKIN technology — via airskin.io")
+
 That sounds benign until you ask the harder question. What exactly is a room becoming when it does not merely respond to life inside it, but attends to that life continuously and begins to act on what it knows?
 
 For a long time, architecture was treated as background. Rooms contained activity, but did not actively interpret it. Even “smart” systems mostly waited for instructions: dim the lights, lower the blinds, start the heat, lock the door. The room was reactive. It became intelligent only when summoned.
@@ -11,6 +13,8 @@ For a long time, architecture was treated as background. Rooms contained activit
 An attentive room is different. It is not defined by isolated commands. It is defined by continuity of notice. It tracks the drift of the air while you sleep, the object left near the entrance, the desk position that suggests yesterday’s work never quite ended, the pattern of motion that says morning is approaching. It does not simply store settings. It accumulates a memory of life in place.
 
 That is the real architectural shift. Space is no longer just a passive container with automated accessories attached. It becomes active infrastructure: not in the inflated sense of branding every sensor as revolutionary, but in the literal sense that the room now participates in the ongoing organization of domestic life. It notices, recalls, infers, prepares.
+
+![Planar Motor — objects moving over a field rather than fixed rails](assets/images/the-space-that-watches-itself/refs/planar-motor.avif "Planar Motor field-based movement system — via planarmotor.com")
 
 ![Echo Hub dashboard — domestic life mediated through a control surface](assets/images/the-space-that-watches-itself/refs/amazon-echo-hub-review-alexa-s-affordable-smart-home-dashboard.jpg "Amazon Echo Hub review — via The Guardian")
 
