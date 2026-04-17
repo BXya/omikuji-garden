@@ -64,20 +64,6 @@ function renderMarkdown(src) {
   return out.join("\n");
 }
 
-/** Render an article's images array as a horizontal figure strip.
- *  Returns empty string if no images. All alt text and credits are pre-sanitized JSON strings. */
-function renderImages(images) {
-  if (!images || !images.length) return "";
-  const escape = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
-  const figures = images.map(img => `
-    <figure class="article-image">
-      <img src="${escape(img.src)}" alt="${escape(img.alt || "")}" loading="lazy" decoding="async" />
-      <figcaption>${escape(img.credit || "")}</figcaption>
-    </figure>
-  `).join("");
-  return `<div class="article-images">${figures}</div>`;
-}
-
 const state = {
   fortunes: [],
   articles: [],
@@ -193,7 +179,7 @@ function openArticle(article) {
   const bodyEl = document.getElementById("overlay-body");
   // Fallback if an article somehow has no title — keeps the dialog labelable.
   titleEl.textContent = article.title || "Untitled";
-  bodyEl.innerHTML = renderImages(article.images) + renderMarkdown(article.body || "");
+  bodyEl.innerHTML = renderMarkdown(article.body || "");
   const overlay = document.getElementById("overlay");
   overlay.hidden = false;
   overlay.scrollTop = 0;
