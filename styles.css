@@ -189,23 +189,25 @@ body {
 }
 
 .fortune-seal {
-  width: 56px;
-  height: 56px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   background: var(--vermilion);
   color: #faf3e2;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   font-family: var(--font-serif);
   font-weight: 900;
-  font-size: 0.5rem;
-  line-height: 1.15;
-  padding: 0 4px;
-  text-align: center;
+  font-size: 0.6rem;
+  line-height: 1.1;
   letter-spacing: 0.02em;
+  padding: 0 6px;
+  text-transform: uppercase;
   box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.35);
   transform: rotate(-4deg);
+  word-spacing: 100vw; /* Force word-wrap: each space acts as a line break */
 }
 
 .fortune-text {
@@ -398,7 +400,12 @@ body {
     max-height: 480px;
   }
 
-  .fortune-seal { width: 48px; height: 48px; font-size: 0.44rem; }
+  .fortune-seal {
+    width: 60px;
+    height: 60px;
+    font-size: 0.52rem;
+    padding: 0 5px;
+  }
   .fortune-text { font-size: 0.9rem; }
 
   .overlay {
